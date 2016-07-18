@@ -7,8 +7,5 @@ export default function configureStore(initialState) {
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f => f
   )(createStore);
-
-  return (
-    finalCreateStore(rootReducer, initialState)
-  );
+  return finalCreateStore(rootReducer, initialState);
 }

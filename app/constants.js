@@ -1,1 +1,1 @@
-/* */
+export const CALCULATE_TIME = 'CALCULATE_TIME';
