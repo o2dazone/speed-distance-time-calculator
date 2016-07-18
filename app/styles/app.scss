@@ -1,5 +1,11 @@
+@import 'variables';
+
+body {
+  background: $c_background;
+}
+
 :local {
-  .foo {
-    color: red;
+  .container {
+    color: $c_text;
   }
 }
