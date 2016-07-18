@@ -1,7 +1,7 @@
 {
-  "name": "spa",
+  "name": "Speed-Distance-Time-Calculator",
   "version": "1.0.0",
-  "description": "single page app using React, Redux, Webpack and Sass",
+  "description": "an app that calculates speed, distance or time based on other properties ",
   "main": "app/server/server.js",
   "repository": "no",
   "author": "Brandon Murry",
