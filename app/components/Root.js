@@ -16,7 +16,6 @@ class App extends Component {
   }
 
   getInputVals(target) {
-    console.log(target);
     const inputs = target.querySelectorAll('input');
     const vals = [];
     inputs.forEach(function(input) {
