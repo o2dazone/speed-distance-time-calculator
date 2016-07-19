@@ -16,6 +16,7 @@ class App extends Component {
   }
 
   getInputVals(target) {
+    console.log(target);
     const inputs = target.querySelectorAll('input');
     const vals = [];
     inputs.forEach(function(input) {
@@ -28,9 +29,7 @@ class App extends Component {
 
   onCalculateTime(e) {
     const { calculateTime } = this.props;
-
-    e.preventDefault();
-    const vals = this.getInputVals(e.target.parentNode);
+    const vals = this.getInputVals(e.target.parentNode.parentNode);
     calculateTime(vals[0] || null, vals[1] || null);
   }
 

@@ -7,16 +7,15 @@ const TimeCalculator = ({ onCalculateTime, time }) => {
     <div>
       <h2>Time</h2>
       <div>
-        <input type="text" defaultValue="60" placeholder="Distance" />
+        <input type="text" onKeyUp={onCalculateTime} defaultValue="60" placeholder="Distance" />
         <DistanceDropdown />
       </div>
       <div>
-        <input type="text" defaultValue="60" placeholder="Speed" />
+        <input type="text" onKeyUp={onCalculateTime} defaultValue="60" placeholder="Speed" />
         <SpeedDropdown />
       </div>
-      <a href="#" onClick={onCalculateTime}>Calculate</a>
 
-      {time.speed && time.distance ? <p>{time.speed / time.distance}</p> : ''}
+      {time.speed && time.distance ? <p>{time.distance / time.speed} hours</p> : ''}
     </div>
   );
 };
